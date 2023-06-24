@@ -28,7 +28,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('auth/token/', views.obtain_auth_token),
 
-    path('',include(router.urls))
+    path('api/v1/',include(router.urls))
 
 
 ]
